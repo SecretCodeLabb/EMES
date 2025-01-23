@@ -1,0 +1,235 @@
+:root {
+    --primary-color: #f5bcc1;
+    --secondary-color: #E8B4B8;
+    --text-color: #353534;
+    --background-color: #FFF5F6;
+    --border-radius: 15px;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+/* Header y Navegación */
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* Contenido Principal */
+main {
+    margin-top: 80px;
+    padding: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Sección Hero */
+.hero {
+    text-align: center;
+    padding: 2rem 2rem;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+}
+
+/* Catálogo de Galletas */
+.cookies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.cookie-card {
+    background-color: rgb(255, 255, 255);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.cookie-card:hover {
+    transform: translateY(-5px);
+}
+
+.image-slider {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; 
+    overflow: hidden;
+    border-radius: var(--border-radius);
+}
+
+.image-slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.image-slider img:first-child {
+    display: block;
+}
+
+.cookie-card h3, 
+.cookie-card p {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.vendors-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.vendors-button:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.whatsapp-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-link:hover {
+    background-color: #128C7E;
+}
+/* Sección de Vendedores */
+.vendors {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.universities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.university-card {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.university-card:hover {
+    transform: translateY(-5px);
+}
+
+.university-card h3 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+
+.vendor-info .vendor {
+    margin-bottom: 0rem;
+    font-size: 1.5rem;
+    line-height: 1.;
+}
+
+.vendor-info .whatsapp-link {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: background-color 0.4s;
+}
+
+.vendor-info .whatsapp-link:hover {
+    background-color: #128C7E;
+}
+
