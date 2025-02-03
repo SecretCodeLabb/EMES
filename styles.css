@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #f5bcc1;
-    --secondary-color: #E8B4B8;
-    --color-buton: #bd9498;
+    --primary-color: #ec89cf;
+    --secondary-color: #db76d6;
+    --color-buton: #dd63a0;
     --text-color: #353534;
-    --background-color: #FFF5F6;
+    --background-color: #fcf7f9;
     --border-radius: 15px;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
